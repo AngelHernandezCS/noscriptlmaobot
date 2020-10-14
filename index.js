@@ -23,7 +23,7 @@ client.on('message', msg => {
 console.log(god[i].user )
 let dude = god[i];
 if(dude.voice.channel){
-    dude.voice.setChannel("740721179249082539")
+    dude.voice.setChannel("445070783258165292")
 }
 //dude.voice.setChannel("740721179249082539")
    }

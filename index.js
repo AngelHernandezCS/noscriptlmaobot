@@ -13,8 +13,7 @@ client.on('message', msg => {
     //node let VC = msg.member.voice.channel.members.each(user => console.log(user.id));
     //console.log(VC);
   if (msg.content.startsWith("#")) {
-    if(msg.content === "`move"){
-  }
+    
   msg.guild.roles.fetch("763466233374048296")
   .then(role =>{ god = role.members.array()
     //console.log(god[6].user.id)

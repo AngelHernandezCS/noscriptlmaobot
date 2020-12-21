@@ -42,9 +42,9 @@ if(dude.voice.channel){
 
 });
 
-client.login("NzU2MjQ4MzQwNzM1MTk3Mzc2.X2PFJg.ubyFy_4TdZNr7DJAi4OLXZdac7M");
+client.login(process.env.TOKEN);
 
 client.on('typingStart', (channel,user) => {
-  if(user.id == process.env.TOKEN)
+  if(user.id == "352265064390328331")
   channel.send("Think CLEARLY about what you type next.");
 });

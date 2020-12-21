@@ -4,9 +4,9 @@ const client = new Discord.Client();
 var god;
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-
-  
 });
+
+
 
 
 client.on('message', msg => {
@@ -42,4 +42,9 @@ if(dude.voice.channel){
 
 });
 
-client.login(process.env.TOKEN);
+client.login("NzU2MjQ4MzQwNzM1MTk3Mzc2.X2PFJg.ubyFy_4TdZNr7DJAi4OLXZdac7M");
+
+client.on('typingStart', (channel,user) => {
+  if(user.id == process.env.TOKEN)
+  channel.send("Think CLEARLY about what you type next.");
+});
